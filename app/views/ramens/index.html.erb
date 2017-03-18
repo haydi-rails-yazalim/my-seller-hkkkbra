@@ -1,0 +1,8 @@
+<% @ramens.each do |ramen| %>
+          <%"#{ramen.id}. ramen " %>
+          <%= ramen.name %>
+          <%= link_to 'Show', ramens_path %>
+          <%= button_to "Add", add_to_card_path(ramen.id)%>
+          <br>
+
+    <% end %>
